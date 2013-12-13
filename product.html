@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home - Moappi BI - The future of dashboarding</title>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet/less" type="text/css" href="css/main.less">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.4.1/less.min.js"></script>
+<script src="js/interaction.js"></script>
+
+</head>
+
+<style>
+/*body{
+	background: url(page-1.png) no-repeat center top;
+}
+*/
+</style>
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+
+
+<body>
+<div id="product">
+	<div class="container hero">
+		<div class="sixteen columns topnav">
+			<div class="left"><a href="index.html"><img id="logo" src="img/logo.png"></a></div>
+			<div class="right">
+				<ul>
+					<li><a href="product.html">Product</a></li>
+					<li><button class="green upper">Sign Up</button></li>
+					<li class="faded">login</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="five columns">
+			&nbsp;
+			<div class="header-tag">
+				<h1>Our Product</h1>
+			</div>
+		</div>
+		<div class="eleven columns omega">
+			<img class="header-image" src="img/header_img_computer.png">
+		</div>
+	</div>
+</div>
+
+<div id="product-body">
+	<div class="container">
+		<div class="twelve columns offset-by-one content">
+			<h1>
+				Mobilize all the main reporting services in one click
+			</h1>
+			<br>
+			<p>
+Endow managers with the metrics they need. Empower your people with the click of a button
+			</p>
+		</div>
+
+
+		<div class="sixteen columns product-title">
+			<center>
+			<div class="white product-circle">1</div>
+			The inputs
+		</center>
+		</div>
+		<div class="sixteen columns product-holder">
+
+			<div class="fourteen columns description alpha offset-by-one">
+				<img src="img/selector_blank.png" id="placeholder-nav">
+				<div class="nine columns alpha ">
+					<h1>Excel Dashboarding Tool (beta)</h1>
+					<p>Our excel tool looks through your excel document and and pulls out all the charts and graphs. You can edit them in our easy-to-use editor, and publish them to be viewed on any device through our secure service.</p>
+				</div>
+
+				<div class="five columns alpha">
+					<button class="green">Use it now!</button>
+				</div>
+
+				<div class="fourteen columns alpha">
+					<img src="img/dashtool_demo.png">
+				</div>
+				<hr>
+			</div>
+		
+		</div>
+
+		<div class="sixteen columns product-title">
+			<center>
+			<div class="white product-circle">2</div>
+			The output
+			</center>
+		</div>
+
+		<div class="sixteen columns product-holder unrounded">
+			<div class="fourteen columns alpha description offset-by-one">
+				<div class="ten columns alpha">
+					<br><br>
+					<h1>Our Dashboards In Action</h1>
+					<p>Desktop. Laptop. Tablet. Smartphone.  We have you covered whether you have an iPhone 5 or a 5 year old laptop. We use the power of HTML 5 to ensure your key performance indicators are available anywhere and on any device.  </p>
+				</div>
+			</div>
+		</div>
+		<div class="sixteen columns screen-selector">
+			<div class="fourteen columns offset-by-one tab-holder">
+				<div class="tabs active" id="tablet"><center>On tablets</center></div>
+				<div class="tabs" id="computer"><center>On a computer</center></div>
+				<div class="tabs" id="smartphone"><center>On a smartphone</center></div>
+			</div>
+		</div>
+		<div class="sixteen columns device-display">
+			<a href="http://moappi.com/demo.html"><div class="cta-button" id="demo-cta"><center>see demo</center></div></a>
+		</div>
+
+		<div class="fourteen columns inset-features features-holder offset-by-one">
+
+			<div class="one-third-inside"><h3>Cross-device compatibility</h3><br><p>All our dashboards work on every mobile device with a browser and an internet connection. They are also extremely fast and easy to access.</p></div>
+			<div class="one-third-inside"><h3>Dashboard directory</h3><br><p>If you sign up with Moappi, all your dashboards are easily organized in a central location. You have different dashboards for different teams all in one page.</p></div>
+			<div class="one-third-inside"><h3>Metric drill-down</h3><br><p>Are your reports very complex? To make them more accessible on a mobile device, perform drill-down on your data to whatever level you need.</p></div>						
+		</div>
+	</div>
+</div>
+<script>
+
+$('#tablet').click(function(){
+	$(".tabs").removeClass('active');
+	$(this).addClass('active');
+	$('.device-display').css('background-image','url(img/ipad_prev.jpg)');
+})
+
+$('#computer').click(function(){
+	$(".tabs").removeClass('active');
+	$(this).addClass('active');
+	$('.device-display').css('background-image','url(img/desktop_prev.jpg)');	
+})
+
+$('#smartphone').click(function(){
+	$(".tabs").removeClass('active');
+	$(this).addClass('active');
+	$('.device-display').css('background-image','url(img/iphone_prev.jpg)');	
+})
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,463 @@
+/*global less settings
+=======================================*/
+
+@green: #83BC2A;
+@green-hover: #99CC66;
+@black: #000;
+@grey: #666;
+@lightgrey: #AAA;
+@darkgrey: #383838;
+@white: #fff;
+
+/*fonts*/
+.lato			{font-family: 'Lato', sans-serif;}
+
+
+/*structure
+=======================================*/
+
+.img-scaling{
+	width: 100%;
+	min-width: 760px;
+}
+
+/*structure
+=======================================*/
+
+/*structural*/
+.one-third-inside{
+	width: 33%;
+	display: inline-block;
+	float: left;
+}
+
+/*global*/
+
+a{
+	text-decoration: none;
+}
+
+h1{
+	font-size: 48px;
+	font-weight: 700;
+}
+
+hr{	border: 0; height: 1px; margin: 40px 0 40px 0;}
+
+
+button{
+	border-radius: 4px;
+	padding: 10px;
+	border: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+	button.green{
+		background-color: @green;
+		color: #fff;
+		.lato;
+		font-size:14px;
+		font-weight: 300;
+		line-height:14px;
+	}
+
+	button.green:hover{
+		background-color: @green-hover;
+	}
+
+	button.grey{
+		background-color: @lightgrey;
+		color: #fff;
+		.lato;
+		font-size:14px;
+		font-weight: 300;
+		line-height:14px;
+	}
+
+	button.grey:hover{
+		background-color: @grey;
+		color: @lightgrey;
+	}
+
+	button.upper{
+		text-transform: uppercase;
+	}
+
+	button.bold{
+		font-weight: 700;
+	}
+
+
+.cta-button{
+	padding: 10px 20px 10px 20px;
+	background: @green;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+	.cta-button a{	text-decoration: none;}
+
+.topnav{
+	margin-top: 20px;
+}
+
+	.topnav ul{
+		margin-top: 20px;
+	}
+	.topnav li{
+		position: relative;
+		.lato;
+		font-size: 14px;
+		font-weight: 300;
+		color: @black;
+		padding: 10px 20px;
+		display: inline-block;
+		list-style: none;
+		float: left;
+		text-transform: uppercase;
+		line-height:14px;		
+	}
+
+		.topnav .faded{
+			color: #999;
+		}
+
+	.topnav .left{		position: relative;		float: left;}
+	.topnav .right{		position: relative;		float: right;}
+
+	.topnav button{
+		margin-top: -10px;
+	}
+
+
+
+
+/*specific*/
+
+
+/*assets*/
+#logo{
+	margin-top: 10px;
+}
+
+.hero{
+
+}
+
+
+	.hero h1{
+		color: @black;
+	}
+
+	.hero h2{
+		font-weight: 300;
+		color: @black;
+		font-size: 21px;
+		margin-bottom: 10px;
+		line-height: 28px;
+	}
+
+	#hero-tag{
+		position: absolute;
+		top: 50%;
+		margin-top: -80px;
+	}
+
+	#hero-image{
+		width: 100%;
+		max-width: 468px;
+		margin: 60px 0 60px 0;
+	}
+
+
+	#hero-tag button{
+		margin-top: 15px;
+		margin-right: 24px;
+	}
+
+
+.header-tag{
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+}
+
+.header-image{
+	margin: 60px 0 0 0;
+}
+
+.subscribe-box{
+	position: absolute;
+	bottom: 60px;	
+}
+
+	.subscribe-box input[type="text"]{
+		width: 200px;
+		border: #AAA 1px solid;
+		background-color: #eee;
+		color: #aaa;
+		padding: 8px;
+		font-weight: 300;
+		.lato;
+		margin: 0;
+		outline: none;
+	}
+
+	.subscribe-box input[type="text"]:focus{
+		background-color: #fff;
+	}
+
+	.subscribe-box input[type="submit"]{
+		border: #AAA 1px solid;
+		color: @grey;
+		padding: 8px;
+		font-weight: 300;
+		.lato;
+		margin-left: -10px;
+		background-color: #ddd;
+	}
+
+	.subscribe-box input[type="submit"]:hover{
+		background-color: #aaa;
+		color: #fff;
+	}
+
+.secondary{
+	color: rgba(255, 255, 255, 0.68);
+	text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px; 
+	line-height: 1.5em;
+}
+
+	.secondary h1{	font-size: 36px; font-weight: 700; line-height: 44px;}
+	.secondary p{	font-size:18px; font-weight: 300;}
+	.secondary hr{	border: 0; height: 1px; background: #fff; margin: 40px 0 40px 0;}
+
+
+.features{
+	color: @grey;
+	line-height: 1.4em;
+}
+
+	.features h1{	font-size: 36px; font-weight: 700;}
+	.features h2{	font-size: 18px; font-weight: 300;}
+
+#features-list{
+	margin-top:550px;
+}
+
+.features-holder{
+	margin-top: 50px;
+}
+
+	.features-holder .feature-item p, h3{	font-size: 18px; margin-left: 40px; font-weight: 300; color: @grey;}
+	.features-holder .feature-item h3{	color: @black;}
+
+	.features-holder .feature-icon{
+		float: left;
+		margin: -8px 0 0 -20px;
+	}
+
+.cta-holder{
+	margin-top: 50px;
+}
+
+/*layout*/
+#header{
+	background: url('img/hometopbanner.png') top repeat-x;
+}
+
+#panel1{
+	background: #232323;
+	border-bottom: 5px solid @darkgrey;
+	padding: 30px;
+}
+
+#panel2{
+	background: url('img/dark_bg.jpg') top no-repeat;
+	background-size: cover;
+	padding: 80px 0 60px 0;
+}
+
+#panel3{	
+	background: url('img/iphone_01.jpg') top no-repeat;
+	padding: 80px 0 60px 0;
+}
+
+#product{
+	background: url('img/product_bg.jpg') top no-repeat;
+}
+
+#product-body{
+	padding: 60px 0 0 0;
+}
+
+	.content{
+		.lato;
+		font-weight: 300;
+		color: @black;
+	}
+	.content h1{
+		font-size: 36px;
+		font-weight: 400;
+	}
+	.content p{
+		font-size: 21px;
+	}
+
+	.product-title{
+		text-shadow: 0px 2px 1px #222;		
+		background: -moz-linear-gradient(top, #555b5e 0%, #28343b 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555b5e), color-stop(100%,#28343b)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #555b5e 0%,#28343b 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #555b5e 0%,#28343b 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #555b5e 0%,#28343b 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #555b5e 0%,#28343b 100%); /* W3C */
+		border-radius: 6px 6px 0 0;
+		color: #fff;
+		font-weight: 700;
+		font-size: 28px;
+		margin: 50px 0 0px 0;
+		height: 100px;
+		line-height: 90px;
+	}
+
+	.white{
+		background-color:@white;
+	}
+
+	.product-circle{
+		box-shadow: 0 2px 1px #222;
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		color: #555b5e;
+		line-height: 40px;
+		font-size: 24px;
+		font-weight: 700;
+		margin-right: 24px;
+		text-shadow: 0 2px 1px #fff;
+	}
+
+	.product-holder{
+		background: #F3F3F3;
+		border-radius: 0 0 6px 6px;
+		margin-top: 0px;
+		padding-bottom: 40px;
+	}
+
+	.unrounded{
+		border-radius: 0;
+	}
+
+	.product-holder hr{
+		background-color: @grey;
+	}
+
+
+	.description{
+		margin-top: 35px;
+	}
+
+		.description h1{
+			font-size: 36px;
+			font-weight: 400;
+		}
+
+		.description p{
+			margin-top: 10px;
+			line-height: 18px;
+			color: @grey;
+			font-weight: 300;
+		}
+
+		.description button{
+			position: relative;
+			margin-top: 40px;
+			left: 50%;
+			margin-left: -50px;
+		}
+
+		.description img{
+			margin: 25px 0 25px 0;
+		}
+
+		#placeholder-nav{
+			cursor: pointer;
+			margin-bottom: 55px;
+		}
+
+	.screen-selector{
+		background-color: #ddd;
+	}
+
+		.screen-selector .tab-holder{
+			height: 50px;
+			font-size: 14px;
+			line-height: 50px;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: @grey;
+		}
+
+		.screen-selector .tab-holder .tabs{
+			position: relative;
+			float: left;
+			width: 33%;
+		}
+
+		.screen-selector .tab-holder .tabs:hover{
+			background: @grey;
+			color: @white;
+			cursor: pointer;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;			
+		}
+
+		.screen-selector .tab-holder .active{
+			background: @green;
+			color: @white;
+		}
+
+		.screen-selector .tab-holder .active:hover{
+			background: @green;
+			color: @white;
+		}
+
+		#demo-cta{
+			position: absolute;
+			bottom: 100px;
+			width: 150px;
+			left: 50%;
+			margin-left:-75px;
+		}
+
+	.device-display{
+		position: relative;
+		border-radius: 0 0 6px 6px;
+		background: url('img/ipad_prev.jpg') top no-repeat;
+		height: 600px;
+	}
+
+	.inset-features{
+		margin: 50px 0 200px 0;
+	}
+
+	.inset-features h3{
+		margin-left: 0px;
+		color: @black;
+	}
+
+	.inset-features p{
+		font-size: 14px;
+		margin-right: 30px;
+		color: @grey;
+		font-weight: 300;
+		line-height: 18px;
+	}
